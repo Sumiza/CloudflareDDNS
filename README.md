@@ -1,3 +1,5 @@
 # CloudflareDDNS
 
-Dynamic dns script for cloudflare usable in windows and linux
+Dynamic dns script for cloudflare
+-bat for windows
+-sh for linux
