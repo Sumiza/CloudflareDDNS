@@ -22,4 +22,4 @@ output=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns
        --data '{"type":"A","name":"'"$ZONE_NAME"'","content":"'"$CURRENT_IP"'","ttl":120,"proxied":false}')
 #echo "$output"
 STAT=$(echo "$output" | grep '"success":false,')
-echo "$(date +%x_%r) IP:$CURRENT_IP $STAT" >> /var/log/dnsupdate/dnsupdate.log
+echo "$(date +%x_%r) IP:$CURRENT_IP $STAT" >> dnsupdate.log
